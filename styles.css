@@ -1,0 +1,213 @@
+/*------------Tested in Chrome, Firefox, and Edge--------------- */
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background: url('svgs/background.svg') #edeff0;
+  background-size: 53.5px;
+}
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+  }
+  a:hover {
+    color: #111;
+  }
+
+header {
+  padding-top: 10px;
+}
+  header nav {
+    padding-bottom: 50px;
+    text-align: left;
+  }
+  header nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  header h1 {
+    line-height: 1em;
+  }
+
+main {
+  padding-top: 50px;
+}
+  main h2 {
+  font-size: 28px;
+}
+  main ul {
+    padding: 0;
+  }
+    main li {
+      display: inline-block;
+      color: #ba8058;
+      margin-right: 20px;
+    }
+      main li img {
+        margin-bottom: 15px;
+      }
+      main li span {
+        margin-left: -40px;
+      }
+      main li:last-child {
+        margin-right: 0;
+      }
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+.alt-logo-text {
+  display: none;
+}
+
+nav svg {
+  fill: #39ADD1;
+}
+.menu li a svg {
+  width: 15px;
+}
+.menu a:hover svg {
+  fill: #111;
+  animation: rotateicon 3s ease-out infinite;
+}
+.menu span {
+  display: inline;
+}
+
+.dogs li {
+  width: 18%;
+}
+
+/* SVGs 
+----------------------------------------------- */
+
+.logo {
+  width: 140px;
+}
+
+.eyes-and-nose {
+  fill: #2d3339;
+}
+
+#red .eyebrows {
+  fill: #eaaa7f;
+  animation: raise 3s ease-out infinite;  
+}
+#red .mouth {
+  fill: #fbfeff;
+}
+
+
+#fawn .eyebrows {
+  fill: #f4c6a6;
+}
+#fawn .mouth {
+  fill: #fbfeff;
+}
+#fawn .head {
+  fill: #eaaa7f;
+}
+#fawn .ears {
+  fill: #eaaa7f;
+  animation: earwag 3s ease-out infinite;  
+}
+
+
+#sable .eyebrows {
+  fill: #f4c6a6;
+  animation: raise 5s ease-out infinite;
+}
+#sable .mouth {
+  fill: #fbfeff;
+}
+#sable .head {
+  fill: #844b24;
+}
+#sable .ears {
+  fill: #844b24;
+}
+
+
+#black-and-tan .eyebrows {
+  fill: #ba8058;
+}
+#black-and-tan .mouth {
+  fill: #fbfeff;
+}
+#black-and-tan .head {
+  fill: #52595f;
+}
+#black-and-tan .ears {
+  fill: #ba8058;
+  animation: earwag 1s ease-out infinite;
+}
+
+/* Key Frames  
+----------------------------------------------- */
+
+@keyframes rotateicon {
+
+  50% {
+    transform: rotate(360deg);
+  }
+
+}
+
+@keyframes earwag {
+
+  50% {
+    transform: rotate(1.35deg);
+  }
+
+}
+
+@keyframes raise {
+
+  50% {
+    transform: translateY(-3px); 
+  }
+
+}
+
+
+/* Media Queries  
+----------------------------------------------- */
+
+@media screen and (max-width: 420px) {
+
+  .logo {
+    width: 40%;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .alt-logo-text {
+    display: inline;
+  }
+
+}
